@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="UTF-8">
+<title> ifStatement </title>
+
+</head>
+
+<body>
+
+
+	
+	<script>
+	
+		const name = window.prompt("Who's there?");
+	
+		if(name!=null && name!="") {
+	
+			if(name=="Admin") {
+			
+				const password = window.prompt("Password?");
+				
+				if(password!=null && password!="") {
+				
+					if(password=="TheMaster") {
+						
+						window.alert("Welcome");
+					
+					}
+					
+					else {
+					
+						window.alert("Wrong Password!");
+					
+					}
+				}
+				else {
+					window.alert("Canceled");
+				}
+			
+			}
+			
+			else {
+				window.alert("I don't know you!");
+			}
+			
+		}
+	
+		else {
+		
+		window.alert("Canceled");
+	
+		}
+	
+	
+	
+	
+	
+	
+	</script>
+
+
+</body>
