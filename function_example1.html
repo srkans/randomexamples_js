@@ -49,9 +49,11 @@
 	
 	}
 
+  
 
+  const shortNames = names.filter(name=>name.length<5); //arrow function
 	
-	para.innerText = choseName() +' ' + rndNumber;
+	para.innerText = choseName() +' ' + rndNumber + ' ' + shortNames;
 	//document.getElementById("p1").innerHTML = choseName();
 
     // Don't edit the code below here!
