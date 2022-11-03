@@ -27,21 +27,31 @@
 		
   </body>
   <script>
-    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada','Betul','Serkan']
     const para = document.createElement('p');
-
+    
     // Add your code here
+
+    let min =0;
+    let max =9;
+
+    function getRandomInt(min, max) {
+    return Math.floor(Math.random()*names.length);
+    } 
 	
-	function choseName() {
+  let rndNumber = getRandomInt(min,max);
+
+  function choseName() {
 	
-	let item = names[Math.floor(Math.random()*names.length)];
+	let item = names[getRandomInt(min,max)];
 	
 	return item ;
 	
-	
 	}
+
+
 	
-	para.innerText = choseName();
+	para.innerText = choseName() +' ' + rndNumber;
 	//document.getElementById("p1").innerHTML = choseName();
 
     // Don't edit the code below here!
