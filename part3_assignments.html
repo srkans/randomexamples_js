@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>odinJSpart3</title>
+    
+</head>
+
+<body>
+
+
+<script>
+
+    function add7(number) {
+
+            return number+7;
+
+    }
+
+    function multiply(a,b) {
+
+        return a*b;
+    }
+
+   
+
+    function capitalize (string) {
+
+        let array = new Array();
+
+        for(let i=0;i<string.length;i++){
+
+            if(i===0) {
+
+                array[i] = string[i].toUpperCase();
+            }
+            else {
+
+                array[i] = string[i].toLowerCase();    
+            }
+           
+        }
+
+        let newString = array.join('');
+
+        return 'new string is ' + newString + ' and last letter of this string is ' + array[string.length-1].toString();
+    }
+    console.log(capitalize("beTUl"));
+    console.log(add7(12));
+    console.log(multiply(5,9));
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
