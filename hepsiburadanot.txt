@@ -1,0 +1,5 @@
+siparis sayfasinda tum siparisler yuklendikten sonra console'a kodu yapistirip kullanabilirsin
+
+iptal edilen siparisler de toplam'a dahil 
+
+virgulden sonrasi hesaplamaya dahil edilmiyor
